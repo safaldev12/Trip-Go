@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripGo Bus App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar with Hamburger Menu -->
+  <nav class="navbar">
+    <div class="logo">TripGo</div>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#routes">Routes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Welcome to TripGo!</h1>
+    
+    <!-- Trip Booking Form -->
+    <form id="tripForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="destination"> Your Destination</label>
+      <select id="destination" required>
+        <option value="">Select a destination</option>
+        <option value="Chitwan">Kathmandu to Chitwan</option>
+        <option value="Butwal">Kathmandu to Butwal</option>
+        <option value="Dang">Kathmandu to Dang</option>
+      </select>
+      
+      <button type="submit">Book Trip</button>
+    </form>
+    
+    <!-- Trip Confirmation Message -->
+    <div id="confirmation" class="hidden">
+      <h2>Trip Confirmation</h2>
+      <p id="confirmationMessage"></p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About TripGo</h2>
+      <p>TripGo is your reliable bus ticketing and travel app. We provide comfortable and affordable bus services from Kathmandu to Chitwan, Butwal, and Dang.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@tripgo.com</p>
+      <p>Phone: +977 1234567890</p>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes">
+      <h2>Routes</h2>
+      <div class="route">
+        <h3>Kathmandu to Chitwan</h3>
+        <p>Distance: 150 km | Fare: NPR 800 | Duration: 5 hours</p>
+        <img src="images/kathmandu-to-chitwan-route.png" alt="Kathmandu to Chitwan Route" class="route-image">
+      </div>
+      <div class="route">
+        <h3>Kathmandu to Butwal</h3>
+        <p>Distance: 250 km | Fare: NPR 1200 | Duration: 7 hours</p>
+        <img src="images/kathmandu-to-butwal-route.png" alt="Kathmandu to Butwal Route" class="route-image">
+      </div>
+      <div class="route">
+        <h3>Kathmandu to Dang</h3>
+        <p>Distance: 300 km | Fare: NPR 1500 | Duration: 9 hours</p>
+        <img src="images/kathmandu-to-dang-route.png" alt="Kathmandu to Dang Route" class="route-image">
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="script.js"></script>
+</body>
+</html>
