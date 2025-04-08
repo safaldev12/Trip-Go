@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripGo Bus App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">TripGo</div>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#routes">Routes</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to TripGo</h1>
+      <p>Your journey starts here.</p>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for trips...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+  
+    <form id="tripForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="destination">Your Destination</label>
+      <select id="destination" required>
+        <option value="">Select a destination</option>
+        <option value="Chitwan">Kathmandu to Chitwan</option>
+        <option value="Butwal">Kathmandu to Butwal</option>
+        <option value="Dang">Kathmandu to Dang</option>
+      </select>
+      
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" required>
+      
+      <button type="submit">Book Trip</button>
+    </form>
+    
+    <div id="confirmation" class="hidden">
+      <h2>Trip Confirmation</h2>
+      <p id="confirmationMessage"></p>
+    </div>
+
+    <section id="about">
+      <h2>About TripGo</h2>
+      <p>TripGo is your reliable bus ticketing and travel app. We provide comfortable and affordable bus services from Kathmandu to Chitwan, Butwal, and Dang. Our mission is to make travel easy, safe, and enjoyable for everyone.</p>
+      <p>With TripGo, you can book your tickets online, check routes, and get real-time updates on your journey. Join us and experience the best travel services in Nepal!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or n~eed assistance? We're here to help!</p>
+      <ul>
+        <li><strong>Email:</strong> TripGo@gmail.com</li>
+        <li><strong>Phone:</strong> +977 9866202234</li>
+        <li><strong>Address:</strong> TripGo Headquarters, Kathmandu, Nepal</li>
+      </ul>
+    </section>
+
+    <section id="routes">
+      <h2>Routes</h2>
+      <div class="route">
+        <h3>Kathmandu to Chitwan</h3>
+        <p><strong>Distance:</strong> 180 km | <strong>Fare:</strong> NPR 800 | <strong>Duration:</strong> 5 hours</p>
+        <p>Travel from the bustling capital city to the serene landscapes of Chitwan. Enjoy the lush jungles and wildlife of Chitwan National Park.</p>
+        <img src="Trip-Go\image\Screenshot 2025-03-17 231955.png" alt="Kathmandu to Chitwan Route" class="route-image">
+      </div>
+      <div class="route">
+        <h3>Kathmandu to Butwal</h3>
+        <p><strong>Distance:</strong> 260 km | <strong>Fare:</strong> NPR 1200 | <strong>Duration:</strong> 9 hours</p>
+        <p>Explore the cultural and historical city of Butwal. Known for its religious sites and natural beauty, Butwal is a must-visit destination.</p>
+        <img src="Trip-Go\image\Screenshot 2025-03-17 232409.png" alt="Kathmandu to Butwal Route" class="route-image">
+      </div>
+      <div class="route">
+        <h3>Kathmandu to Dang</h3>
+        <p><strong>Distance:</strong> 426 km | <strong>Fare:</strong> NPR 1800 | <strong>Duration:</strong> 14 hours</p>
+        <p>Discover the scenic beauty of Dang. From rolling hills to vibrant culture, Dang offers a unique travel experience.</p>
+        <img src="Trip-Go\image\Screenshot 2025-03-17 112935.png" alt="Kathmandu to Dang Route" class="route-image">
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023 TripGo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
